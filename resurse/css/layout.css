@@ -4,6 +4,7 @@
 @import './landing.css';
 @import './cards.css';
 @import './grids.css';
+@import './info.css';
 
 /* reset margin and padding for all elements from project */
 * { 
