@@ -1,0 +1,20 @@
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 3rem 0;
+  height: 25vh;
+  min-height: 250px;
+}
+
+.cards .card:not(:last-child) {
+  margin-right: 4rem;
+}
+
+.cards .card {
+  text-align: center;
+}
+
+.cards .card .title {
+  margin-bottom: 1.5rem;
+}

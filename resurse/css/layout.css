@@ -1,11 +1,42 @@
 
+/* import files */
+@import './header.css';
+@import './landing.css';
+@import './cards.css';
+
+/* reset margin and padding for all elements from project */
+* { 
+  margin: 0;
+  padding: 0;
+}
+
+
 body{
   /* define variables */
   --background:#1b1b1b; /* dark black */
   --text-gray: #464a4d; /* dark gray */
+  --text-normal: #fefefe; /* white */
   --purple: #7525f6; /* purple - used for border / text color etc */
 
   /* style */
   background-color: var(--background) ;
   color:var(--text-gray);
+}
+
+.container {
+  padding: 0 2rem;
+}
+
+a {
+  text-decoration: none;
+  letter-spacing: 1.5px;
+}
+
+li {
+  list-style: none;
+}
+
+img {
+  height: 100%;
+  width: 100%;
 }

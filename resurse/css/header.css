@@ -1,0 +1,29 @@
+/* navigation */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+/* title */
+h1 a {
+  color: var(--purple);
+  font-weight: 400;
+  font-size: 1.75rem;
+}
+
+/* elements */
+.nav ul {
+  display: flex;
+}
+
+.nav ul li:first-child {
+  margin-right: 2rem;
+}
+
+.nav ul li a {
+  color: var(--text-normal);
+  font-size: 1.1rem;
+}

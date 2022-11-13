@@ -1,0 +1,25 @@
+.landing {
+  height: 100vh;
+  min-height: 849px;
+  position: relative;
+}
+
+.landing img {
+  width: 100%;
+  height: 100vh;
+  min-height: 849px;
+  opacity: 0.5;
+}
+
+.landing figcaption {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  color: var(--text-normal);
+  font-size: 2.75rem;
+  text-align: center;
+}

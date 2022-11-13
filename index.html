@@ -13,14 +13,12 @@
     <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="container">
       <nav class="nav">
+        <h1>
+          <a href="index.html">Rompo</a>
+        </h1>
         <ul class="list">
-          <li class="list__item home">
-            <h1>
-              <a href="index.html">Rompo</a>
-            </h1>
-          </li>
           <li class="list__item about"><a href="about.html">About us</a></li>
           <li class="list__item products"><a href="products.html">Products</a></li>
         </ul>
@@ -30,11 +28,26 @@
     <div class="landing">
       <figure>
         <img src="./resurse/img/landing_large.jpg">
-        <figcaption>Two beautiful chairs with a table - Paris Collection</figcaption>
+        <figcaption>Two beautiful chairs with a table <br> Paris Collection</figcaption>
       </figure>
     </div>
 
-    <main id="main">
+    <main id="cards" class="cards container">
+      <section class="card">
+        <h2 class="title">Zone #5</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
+      </section>
+      <section class="card">
+        <h2 class="title">Zone #6</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
+      </section>
+      <section class="card">
+        <h2 class="title">Zone #7</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
+      </section>
+    </main>
+
+    <!-- <main id="main">
       <section class="about">
         <h2 class="about__title">About Us</h2>
         <article class="about__card">
@@ -110,7 +123,7 @@
       <a href="/resurse/ico/favicon.png" download>
         Download our contact
       </a>
-    </main>
+    </main> -->
 
     <footer class="footer">
       <a class="footer__back-to-top" href="#header">Back To Top</a>
