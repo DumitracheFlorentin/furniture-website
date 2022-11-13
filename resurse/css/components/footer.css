@@ -1,0 +1,27 @@
+/* back to top btn */
+.back-to-top {
+  position: fixed;
+  bottom: 0;
+  margin-bottom: 1.5rem;
+}
+
+/* address */
+.footer .address {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+.footer .address > span {
+  margin: 0.3rem 0;
+}
+
+.footer .copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.75rem 0;
+}
+
