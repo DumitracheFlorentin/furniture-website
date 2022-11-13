@@ -1,0 +1,11 @@
+
+body{
+  /* define variables */
+  --background:#1b1b1b; /* dark black */
+  --text-gray: #464a4d; /* dark gray */
+  --purple: #7525f6; /* purple - used for border / text color etc */
+
+  /* style */
+  background-color: var(--background) ;
+  color:var(--text-gray);
+}
