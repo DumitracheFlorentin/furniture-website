@@ -1,17 +1,16 @@
 
 /* import files */
-@import './header.css';
-@import './landing.css';
-@import './cards.css';
-@import './grids.css';
-@import './info.css';
+@import './components/header.css';
+@import './components/landing.css';
+@import './components/cards.css';
+@import './components/grids.css';
+@import './components/info.css';
 
 /* reset margin and padding for all elements from project */
 * { 
   margin: 0;
   padding: 0;
 }
-
 
 body{
   /* define variables */
@@ -25,6 +24,7 @@ body{
   color:var(--text-gray);
 }
 
+/* general settings */
 .container {
   padding: 0 2rem;
 }
