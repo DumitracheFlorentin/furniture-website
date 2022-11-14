@@ -17,8 +17,10 @@
 body{
   /* define variables */
   --background:#1b1b1b; /* dark black */
+  --background-gray:rgba(255, 255, 255, 0.4); /* dark black */
   --text-gray: #464a4d; /* dark gray */
   --text-normal: #fefefe; /* white */
+  --border-gray: rgba(255, 255, 255, 0.8);
   --purple: #7525f6; /* purple - used for border / text color etc */
 
   /* style */
@@ -43,4 +45,13 @@ li {
 img {
   height: 100%;
   width: 100%;
+}
+
+.trapezoid {
+  margin: 0.09rem 0 0.35rem;
+  width: 71px;
+  height: 10px;
+  opacity: 1;
+  background: var(--text-gray);
+  transform: perspective(2px) rotateX(-1deg);
 }
