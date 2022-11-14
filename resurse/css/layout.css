@@ -6,6 +6,7 @@
 @import './components/grids.css';
 @import './components/info.css';
 @import './components/footer.css';
+@import './components/back-to-top.css';
 
 /* reset margin and padding for all elements from project */
 * { 
@@ -21,7 +22,7 @@ body{
   --purple: #7525f6; /* purple - used for border / text color etc */
 
   /* style */
-  background-color: var(--background) ;
+  background-color: var(--background);
   color:var(--text-gray);
 }
 
