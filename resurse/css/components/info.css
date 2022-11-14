@@ -40,3 +40,12 @@
 .info .links a:hover {
   opacity: 0.25;
 }
+
+#customers {
+  caption-side: bottom;
+}
+
+thead {
+  border-bottom: 10px solid var(--text-normal);
+}
+
