@@ -25,3 +25,14 @@
   margin: 0.75rem 0;
 }
 
+@media (max-width:801px) {
+  .footer .address > span {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width:600px) {
+  .footer .address > span {
+    font-size: 0.7rem;
+  }
+}

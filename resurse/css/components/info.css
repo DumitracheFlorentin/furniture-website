@@ -49,3 +49,12 @@ thead {
   border-bottom: 10px solid var(--text-normal);
 }
 
+@media (max-width:600px) {
+  .info iframe {
+    width: 415px;
+  }
+
+  .info .links {
+    width: 415px;
+  }
+}

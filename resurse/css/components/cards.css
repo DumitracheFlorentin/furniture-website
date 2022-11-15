@@ -18,3 +18,20 @@
 .cards .card .title {
   margin-bottom: 1.5rem;
 }
+
+@media (max-width:801px) {
+  .cards {
+    flex-direction: column;
+    min-height: 350px;
+  }
+
+  .cards .card:not(:last-child) {
+    margin: 0;
+    
+  }
+
+  .cards .card {
+    margin-top: 1.5rem;
+    
+  }
+}
