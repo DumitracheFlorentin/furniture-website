@@ -1,12 +1,12 @@
 
 /* import files */
-@import './components/header.css';
 @import './components/landing.css';
 @import './components/cards.css';
 @import './components/grids.css';
 @import './components/info.css';
 @import './components/footer.css';
 @import './components/back-to-top.css';
+@import './components/navbar/navbar.css';
 
 /* reset margin and padding for all elements from project */
 * { 
@@ -36,6 +36,7 @@ body{
 a {
   text-decoration: none;
   letter-spacing: 1.5px;
+  color: var(--text-normal);
 }
 
 li {
