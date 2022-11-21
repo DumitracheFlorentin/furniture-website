@@ -12,25 +12,84 @@
     <link rel="icon" type="image/x-icon" href="/resurse/ico/favicon.png">
   </head>
   <body>
-    <header id="header">
+    <header id="header" class="header">
+      <div class="logo">
+        <h1>Rompo <span>Furniture</span></h1>
+      </div>
       <nav class="nav">
-        <ul class="list">
-          <li class="list__item home">
-            <h1>
-              <a href="index.html">Rompo</a>
-            </h1>
-          </li>
-          <li class="list__item about"><a href="about.html">About us</a></li>
-          <li class="list__item products"><a href="products.html">Products</a></li>
+        <div id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="menu">
+            <li>
+              <div>
+                <p>Home</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#locations">Locations</a>
+                </li>
+                <li>
+                  <a href="#awards">Awards</a>
+                </li>
+                <li>
+                  <a href="#shipping">Shipping Policy</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <p>About Us</p>
+              </div>
+              <ul>                        
+                <li>
+                  <a href="despre.html#presentation">Presentation</a>
+                </li>
+                <li>
+                  <a href="despre.html#history">History</a>
+                </li>
+                <li>
+                  <a href="despre.html#motivation">Motivation</a>
+                </li>
+                <li>
+                  <a href="despre.html#gallery">Gallery</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <p>Products</p>
+              </div>
+              <ul>
+                  <li>
+                    <a href="#">All</a>
+                  </li>
+                  <li>
+                    <a href="#">Beds</a>
+                  </li>
+                  <li>
+                    <a href="#">Chairs</a>
+                  </li>
+                  <li>
+                    <a href="#">Nightstands</a>
+                  </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
         </ul>
       </nav>
     </header>
 
     <div class="landing">
-      <figure>
-        <img src="./resurse/img/landing_large.jpg">
-        <figcaption>Two beautiful chairs with a table - Paris Collection</figcaption>
-      </figure>
+      <picture>
+        <source srcset="./resurse/imagini/landing_mobile.jpg" media="(max-width:700px)"/>
+        <source srcset="./resurse/imagini/landing_medium.jpg" media="(max-width:1200px)"/>
+        <img src="./resurse/imagini/landing_large.jpg" alt="Furniture">
+      </picture>
     </div>
 
     <main id="main">
