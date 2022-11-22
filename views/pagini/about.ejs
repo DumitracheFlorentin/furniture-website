@@ -1,76 +1,16 @@
 <!DOCTYPE html>
   <html lang="en">
   <head>
-    <meta charset="UTF-8">
     <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
-    <meta name="author" content="Dumitrache Florentin-Cristian">
     <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
-    <meta name="msapplication-TileColor" content="#113228">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rompo | Homepage</title>
-    <link rel="icon" type="image/x-icon" href="/resurse/ico/favicon.png">
-    <link rel="stylesheet" href="resurse/css/layout.css" type="text/css" />
+    <title>Rompo | About</title>
+
+    <%- include("../fragmente/head.ejs") %>
   </head>
   <body>
-    <header id="header" class="container">
-      <nav class="nav">
-        <a class="logo" href="#">
-          <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"/></svg>
-          <span class="title">Rompo</span>
-        </a>
-        <ul class="menu">
-          <li class="dropdown">
-            <div class="button">Pages</div>
-            <div class="content">
-              <a href="/about.html">Despre</a>
-              <a href="/products.html">Produse</a>
-              <a href="/personalization">Personalizeaza</a>
-            </div>
-          </li>
-          <li class="dropdown">
-            <div class="button">Pages on Site</div>
-            <div class="content">
-              <a href="#table">Table</a>
-              <a href="#info">Information Zone</a>
-              <a href="#footer">Footer</a>
-            </div>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-        <div class="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-      </nav>
-    </header>
-
-    <div class="landing">
-      <figure>
-        <img src="./resurse/img/landing_large.jpg">
-        <figcaption>Two beautiful chairs with a table <br> Paris Collection</figcaption>
-      </figure>
-    </div>
+    <%- include("../fragmente/header.ejs") %>
 
     <main id="main" class="main container">
-      <section class="cards">
-        <section class="card">
-          <h2 class="title">Zone #5</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
-        </section>
-        <section class="card">
-          <h2 class="title">Zone #6</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
-        </section>
-        <section class="card">
-          <h2 class="title">Zone #7</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
-        </section>
-      </section>
-
       <section class="grids grid-container" id="table">
         <div class="second-zone table" style="overflow-x:auto;overflow-y:hidden;">
           <table id="customers">
@@ -146,17 +86,9 @@
       </section>
 
       <section class="info container" id="info">
-        <iframe name="iframe" width="560" height="315" src="https://www.youtube.com/embed/1mngMKEkxn0"></iframe>
-        <div class="links">
-          <div class="iframe-section">
-            <div class="trapezoid"></div> 
-            <a target="iframe" href="https://www.youtube.com/embed/JwZZw_bEkjo">Video 1</a>
-          </div>
-          <div class="iframe-section">
-            <div class="trapezoid"></div> 
-            <a target="iframe" href="https://www.youtube.com/embed/l47G9607PrM">Video 2</a>  
-          </div>
-        </div>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Error vero qui voluptate excepturi soluta quis debitis cumque nobis, dignissimos nulla corporis nisi assumenda autem non quod, quasi a, quas dicta.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore tempore corrupti accusamus nihil veritatis quae sunt sapiente velit aliquam nisi obcaecati nemo, optio eius quaerat saepe, sed similique. Suscipit.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error id culpa dolor laudantium dolore, exercitationem iusto neque velit voluptatibus placeat magnam deserunt doloribus, enim accusantium tempore quo. Id, laborum illo.</p>
       </section>
     </main>
 
@@ -238,27 +170,6 @@
       </a>
     </main> -->
 
-    <footer class="footer container" id="footer">
-      <a class="back-to-top" href="#header" title="Click pentru a merge sus">
-        <div class="first-block"></div>
-        <div class="triangle"></div>
-        <div class="second-block"></div>
-      </a>
-
-      <address class="address">
-        <span class="email">
-          Email: <a href="mailto:webmaster@dumitracheflorentincristian@gmail.com">Dumitrache Florentin-Cristian</a> <br>
-        </span>
-        <span class="phone">
-          Phone: <a href="tel:0766416074">+40766 416 074</a> <br>
-        </span>
-        <span class="my-address">
-          Address: <a href="https://goo.gl/maps/kKEjezM3yRasDGrK6">Faculty of Matematics And Computer Science</a> <br>
-        </span>
-        <a href="https://api.whatsapp.com/send?phone=0766416074" class="wapp">Send Message</a>
-      </address>
-
-      <small class="copyright">Copyright &copy; <time datetime="2022-10-26 12:00">Dumitrache Florentin-Cristian</time>. All rights reserved.</small>
-    </footer>
+    <%- include("../fragmente/footer.ejs") %>
   </body>
 </html>

@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
+    <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
+    <title>Rompo | Homepage</title>
+
+    <%- include("../fragmente/head.ejs") %>
+  </head>
+  <body>
+    <%- include("../fragmente/header.ejs") %>
+
+    <div class="landing">
+      <figure>
+        <img src="/resurse/img/landing_large.jpg">
+        <figcaption>Two beautiful chairs with a table <br> Paris Collection</figcaption>
+      </figure>
+    </div>
+
+    <p>IP: <%- locals.ip %></p>
+
+    <main id="main" class="main container">
+      <section class="cards">
+        <section class="card">
+          <h2 class="title">Zone #5</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
+        </section>
+        <section class="card">
+          <h2 class="title">Zone #6</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
+        </section>
+        <section class="card">
+          <h2 class="title">Zone #7</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores ducimus recusandae iusto voluptas id quibusdam perferendis explicabo ab, ex sed ea minus impedit sunt corrupti nemo, officia cum! Quis, nulla?</p>
+        </section>
+      </section>
+
+      <section class="grids grid-container" id="table">
+        <div class="second-zone table" style="overflow-x:auto;overflow-y:hidden;">
+          <table id="customers">
+            <caption>Customers</caption>
+            <thead>
+              <tr>
+                <th>Company</th>
+                <th colspan="2">Name</th>
+                <th>Country</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria</td>
+                <td>Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Berglunds snabbköp</td>
+                <td>Christina</td>
+                <td>Berglund</td>
+                <td>Sweden</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco</td>
+                <td>Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland</td>
+                <td>Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen</td>
+                <td>Bennett</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Königlich Essen</td>
+                <td>Philip</td>
+                <td>Cramer</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi</td>
+                <td>Tannamuri</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni</td>
+                <td>Rovelli</td>
+                <td>Italy</td>
+              </tr>
+              <tr>
+                <td>North/South</td>
+                <td>Simon</td>
+                <td>Crowther</td>
+                <td>UK</td>
+              </tr>
+            </tbody>
+            <tfoot></tfoot>
+          </table>
+        </div>
+        <div class="third-zone">Zone #3</div>  
+        <div class="fourth-zone">Zone #5</div>
+      </section>
+
+      <section class="info container" id="info">
+        <iframe name="iframe" width="560" height="315" src="https://www.youtube.com/embed/1mngMKEkxn0"></iframe>
+        <div class="links">
+          <div class="iframe-section">
+            <div class="trapezoid"></div> 
+            <a target="iframe" href="https://www.youtube.com/embed/JwZZw_bEkjo">Video 1</a>
+          </div>
+          <div class="iframe-section">
+            <div class="trapezoid"></div> 
+            <a target="iframe" href="https://www.youtube.com/embed/l47G9607PrM">Video 2</a>  
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- <main id="main">
+      <section class="about">
+        <h2 class="about__title">About Us</h2>
+        <article class="about__card">
+          <h3>Family health</h3>
+          <i>Rompo Furniture is <b>non-toxic</b>, tested and certified due to the quality it proves, accredited by <a href="https://www.ul.com/resources/ul-greenguard-certification-program"><abbr title="Greenguard Gold">GG</abbr></a>.</i>
+          <a href="#"><strong>Details</strong></a>
+        </article>
+        <article class="about__card">
+          <h3>Safety above all</h3>
+          <i> <b>The drawers</b> joined in the dovetail system have <b>an anchoring and anti-detachment system</b>.</i>
+          <a href="#"><strong>Details</strong></a>
+        </article>
+        <article class="about__card">
+          <h3><b>Durable</b> furniture</h3>
+          <i>Made 100% of <b>solid wood</b> of beech and oak, made to <em>last over generations</em>.</i>
+          <a href="#"><strong>Details</strong></a>
+        </article>
+        <article class="about__card">
+          <h3>Winners for 10 years</h3>
+          <blockquote cite="gazetadreptatea.ro">The newspaper "Dreptatea" offers the award for the best business in the field of furniture in the last 10 years.</blockquote>
+          <a href="#"><strong>Details</strong></a>
+        </article>
+      </section>
+
+      <section class="collections">
+        <h2 class="collections__title">Collections</h2>
+        <section class="collections__card">
+          <h3>Bucharest Collection</h3>
+          <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi fugiat vitae aperiam mollitia, ea impedit dignissimos voluptatibus enim deleniti, vel facilis velit magni voluptatem placeat odit ab repellendus expedita perferendis!</q>
+          <a href="#"><strong>See More</strong></a>
+        </section>
+        <section class="collections__card">
+          <h3>Paris Collection</h3>
+          <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptas soluta laborum porro maxime sunt aliquam accusantium, quia, hic exercitationem dignissimos? Hic non officiis assumenda pariatur nobis similique perspiciatis deleniti?</q>
+          <a href="#"><strong>See More</strong></a>
+        </section>
+        <section class="collections__card">
+          <h3>Barcelona Collection</h3>
+          <q>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptate laudantium eos odit possimus excepturi saepe quis dolorem nisi? Ea nam deleniti reiciendis, obcaecati voluptatem vel voluptatibus vitae maxime dolor?</q>
+          <a href="#"><strong>See More</strong></a>
+        </section>
+      </section>
+
+      <section class="faq">
+        <h2 class="faq__title">FAQ</h2>
+
+        <div class="faq__container">
+          <details class="faq__container__question">
+            <summary>Question #1</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+          <details class="faq__container__question">
+            <summary>Question #2</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+          <details class="faq__container__question">
+            <summary>Question #3</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+          <details class="faq__container__question">
+            <summary>Question #4</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+        </div>
+      </section>
+
+      <div class="videos">
+        <a target="iframe" href="https://www.youtube.com/embed/JwZZw_bEkjo">Video 1</a>
+        <a target="iframe" href="https://www.youtube.com/embed/l47G9607PrM">Video 2</a>
+        <iframe name="iframe" width="560" height="315" src="https://www.youtube.com/embed/1mngMKEkxn0"></iframe>
+      </div>
+      
+      <a href="/resurse/ico/favicon.png" download>
+        Download our contact
+      </a>
+    </main> -->
+
+    <%- include("../fragmente/footer.ejs") %>
+  </body>
+</html>

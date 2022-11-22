@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html  lang="ro">
+    <head>
+        <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
+        <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
+        <title>Rompo | Error</title>
+
+        <%- include("../fragmente/head.ejs") %>
+    </head>
+    <body>
+    <%- include("../fragmente/header.ejs");  %> 
+
+    <main>
+        <div id="err-coloane">
+			<div id="err-imag">
+				<img src="<%- locals.img %>" />
+			</div>
+			<section>
+				<h2><%- locals.title %></h2>
+				<p><%- locals.label %></p>
+			</section>
+		</div>
+    </main>
+
+    <%- include("../fragmente/footer.ejs");  %> 
+    </body>
+</html>

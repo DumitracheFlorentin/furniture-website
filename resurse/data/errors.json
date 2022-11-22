@@ -1,0 +1,24 @@
+{
+  "img_path": "resurse/img/errors",
+  "default": {
+    "title": "Error!!",
+    "label": "An error has occurred.",
+    "img":"unauthorized.png"
+  },
+  "errors": [
+    {
+      "statusCode": 404,
+      "status": true,
+      "title": "404 - Page not found!",
+      "label": "Not found in the server, search on another route!",
+      "img": "glass.png"
+    },
+    {
+      "statusCode": 403,
+      "status": true,
+      "title": "403 - Forbidden",
+      "label": "Route is not good!",
+      "img":"unauthorized.png"
+    }
+  ]
+}
