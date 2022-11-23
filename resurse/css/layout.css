@@ -8,6 +8,7 @@
 @import './components/back-to-top.css';
 @import './components/navbar/navbar.css';
 @import './components/error.css';
+@import './components/print.css';
 
 /* reset margin and padding for all elements from project */
 * { 
