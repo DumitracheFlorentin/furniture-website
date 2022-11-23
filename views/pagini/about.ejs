@@ -11,6 +11,13 @@
     <%- include("../fragmente/header.ejs") %>
 
     <main id="main" class="main container">
+      <video width="320" height="240" controls="controls" poster="resurse/img/barbershop.jpg" preload="metadata">
+        <source src="resurse/video/barbershop.mp4" type="video/mp4">
+        <source src="resurse/video/barbershop.ogv" type="video/ogv">
+        <track default src="resurse/video/sub_ro.vtt" kind="captions" srclang="ro" label="romanian" />
+        <track  src="resurse/video/sub_en.vtt" kind="captions" srclang="en" label="english" />
+      </video>
+
       <section class="grids grid-container" id="table">
         <div class="second-zone table" style="overflow-x:auto;overflow-y:hidden;">
           <table id="customers">

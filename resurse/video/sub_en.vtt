@@ -1,0 +1,10 @@
+WEBVTT
+
+00:00.000 --> 00:03.000 align:middle line:7
+A <b>message</b> about barbershop.
+
+00:03.000 --> 00:05.000
+Another example for <i>vtt</i>.
+
+00:05.000 --> 00:08.000
+The end.
