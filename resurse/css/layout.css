@@ -7,6 +7,8 @@
 @import './components/footer.css';
 @import './components/back-to-top.css';
 @import './components/navbar/navbar.css';
+@import './components/about.css';
+@import './components/collections.css';
 
 /* reset margin and padding for all elements from project */
 * { 
@@ -56,3 +58,16 @@ img {
   background: var(--text-gray);
   transform: perspective(2px) rotateX(-1deg);
 }
+
+.flex-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 4rem 0;
+}
+
+.flex-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3.5rem;
+ }
