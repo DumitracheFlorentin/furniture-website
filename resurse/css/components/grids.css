@@ -31,6 +31,15 @@
   height: 100%;
   margin:0;
   padding:0;
+  border-spacing: 0 1rem;
+}
+
+table thead {
+  border-bottom: 1rem solid white;
+}
+
+table tfoot {
+  border-top: 1rem solid white;
 }
 
 #customers td, #customers th {
@@ -39,12 +48,17 @@
   font-size: 1.25rem;
 }
 
-#customers tr:nth-child(even){
-  background-color: #f2f2f2;
+#customers tbody tr:nth-child(even){
+  border: 0.25rem solid green;
+}
+
+#customers tbody tr:nth-child(odd){
+  border: 0.25rem solid red;
 }
 
 #customers tr:hover {
-  background-color: #ddd;
+  box-shadow: 10px 10px 10px var(--purple) inset;
+  transition: box-shadow 0.5s ease-in-out;
 }
 
 #customers th {
