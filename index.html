@@ -4,15 +4,94 @@
     <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
     <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
     <title>Rompo | Homepage</title>
-
-    <%- include("../fragmente/head.ejs") %>
+    
+    <meta charset="UTF-8">
+    <meta name="author" content="Dumitrache Florentin-Cristian">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    
+    <link rel="stylesheet" href="/resurse/css/layout.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/resurse/ico/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/resurse/ico/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/resurse/ico/favicon-16x16.png">
+    <link rel="manifest" href="/resurse/ico/site.webmanifest">
+    <link rel="mask-icon" href="/resurse/ico/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <%- include("../fragmente/header.ejs") %>
-
-    <p class="printTitle">Acesta este un proiect școlar!</p>
-    <p id="watermark"></p>
-    <p id="absolut"></p>
+    <header id="header" class="header">
+      <div class="logo">
+        <h1>Rompo <span>Furniture</span></h1>
+      </div>
+      <nav class="nav">
+        <div id="hamburger">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
+        <ul class="menu">
+            <li>
+              <div>
+                <p>Home</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="#locations">Locations</a>
+                </li>
+                <li>
+                  <a href="#awards">Awards</a>
+                </li>
+                <li>
+                  <a href="#shipping">Shipping Policy</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <p>About Us</p>
+              </div>
+              <ul>                        
+                <li>
+                  <a href="despre.html#presentation">Presentation</a>
+                </li>
+                <li>
+                  <a href="despre.html#history">History</a>
+                </li>
+                <li>
+                  <a href="despre.html#motivation">Motivation</a>
+                </li>
+                <li>
+                  <a href="despre.html#gallery">Gallery</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <div>
+                <p>Products</p>
+              </div>
+              <ul>
+                  <li>
+                    <a href="#">All</a>
+                  </li>
+                  <li>
+                    <a href="#">Beds</a>
+                  </li>
+                  <li>
+                    <a href="#">Chairs</a>
+                  </li>
+                  <li>
+                    <a href="#">Nightstands</a>
+                  </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+        </ul>
+      </nav>
+    </header>
 
     <div class="landing">
       <picture>
@@ -21,8 +100,6 @@
         <img src="./resurse/img/landing_large.jpg" alt="Furniture">
       </picture>
     </div>
-
-    <p>IP: <%- locals.ip %></p>
 
     <main id="main">
       <section class="about flex-section">
@@ -60,7 +137,6 @@
                 <th>Company</th>
                 <th colspan="2">Name</th>
                 <th>Country</th>
-                <th>Salary</th>
               </tr>
             </thead>
             <tbody>
@@ -69,63 +145,54 @@
                 <td>Maria</td>
                 <td>Anders</td>
                 <td>Germany</td>
-                <td>1000$</td>
               </tr>
               <tr>
                 <td>Berglunds snabbköp</td>
                 <td>Christina</td>
                 <td>Berglund</td>
                 <td>Sweden</td>
-                <td>2000$</td>
               </tr>
               <tr>
                 <td>Centro comercial Moctezuma</td>
                 <td>Francisco</td>
                 <td>Chang</td>
                 <td>Mexico</td>
-                <td>1000$</td>
               </tr>
               <tr>
                 <td>Ernst Handel</td>
                 <td>Roland</td>
                 <td>Mendel</td>
                 <td>Austria</td>
-                <td>1500$</td>
               </tr>
               <tr>
                 <td>Island Trading</td>
                 <td>Helen</td>
                 <td>Bennett</td>
                 <td>UK</td>
-                <td>1300$</td>
               </tr>
               <tr>
                 <td>Königlich Essen</td>
                 <td>Philip</td>
                 <td>Cramer</td>
                 <td>Germany</td>
-                <td>1000$</td>
               </tr>
               <tr>
                 <td>Laughing Bacchus Winecellars</td>
                 <td>Yoshi</td>
                 <td>Tannamuri</td>
                 <td>Canada</td>
-                <td>2000$</td>
               </tr>
               <tr>
                 <td>Magazzini Alimentari Riuniti</td>
                 <td>Giovanni</td>
                 <td>Rovelli</td>
                 <td>Italy</td>
-                <td>1000$</td>
               </tr>
               <tr>
                 <td>North/South</td>
                 <td>Simon</td>
                 <td>Crowther</td>
                 <td>UK</td>
-                <td>3000$</td>
               </tr>
             </tbody>
             <tfoot></tfoot>
@@ -160,15 +227,15 @@
             <h2>Gallery</h2>
             <div id="grid-galerie">
                 <figure>
-                  <img src="./resurse/img/chair.jpg" alt="chair" height="200" width="250">
+                  <img src="./resurse/imagini/chair.jpg" alt="chair" height="200" width="250">
                   <figcaption>Chair</figcaption>
                 </figure>
                 <figure>
-                  <img src="./resurse/img/bed.jpg" alt="chair" height="200" width="250">
+                  <img src="./resurse/imagini/bed.jpg" alt="chair" height="200" width="250">
                   <figcaption>Bed</figcaption>
                 </figure>
                 <figure>
-                  <img src="./resurse/img/nightstand.jpg" alt="chair" height="200" width="250">
+                  <img src="./resurse/imagini/nightstand.jpg" alt="chair" height="200" width="250">
                   <figcaption>Bed</figcaption>
                 </figure>
             </div>
@@ -218,6 +285,25 @@
       </div>
     </main>
 
-    <%- include("../fragmente/footer.ejs") %>
+    <footer class="footer flex-section container">
+      <a class="footer__back-to-top" href="#header">Back To Top</a>
+
+      <a class="footer__back-to-top" href="https://www.youtube.com/embed/l47G9607PrM" target="_blank">External Link</a>
+
+      <address class="footer__address">
+        <span class="footer__address__email">
+          Email: <a href="mailto:webmaster@dumitracheflorentincristian@gmail.com">Dumitrache Florentin-Cristian</a> <br>
+        </span>
+        <span class="footer__address__phone">
+          Phone: <a href="tel:0766416074">+40766 416 074</a> <br>
+        </span>
+        <span class="footer__address__my-address">
+          Address: <a href="https://goo.gl/maps/kKEjezM3yRasDGrK6">Faculty of Matematics And Computer Science</a> <br>
+        </span>
+        <a href="https://api.whatsapp.com/send?phone=0766416074" class="footer__address__wapp">Send Message</a>
+      </address>
+
+      <small class="copyright">Copyright &copy; <time datetime="2022-10-26 12:00">Dumitrache Florentin-Cristian</time>. All rights reserved.</small>
+    </footer>
   </body>
 </html>

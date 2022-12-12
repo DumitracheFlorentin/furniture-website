@@ -7,8 +7,9 @@
 @import './components/footer.css';
 @import './components/back-to-top.css';
 @import './components/navbar/navbar.css';
-@import './components/error.css';
-@import './components/print.css';
+@import './components/collections.css';
+@import './components/faq.css';
+@import './components/gallery.css';
 
 /* reset margin and padding for all elements from project */
 * { 
@@ -16,7 +17,7 @@
   padding: 0;
 }
 
-body{
+body {
   /* define variables */
   --background:#1b1b1b; /* dark black */
   --background-gray:rgba(255, 255, 255, 0.4); /* dark black */
@@ -59,9 +60,23 @@ img {
   transform: perspective(2px) rotateX(-1deg);
 }
 
-/* video */
-
-video::cue {
-  background: rgba(255, 255, 255, 0.3);
-  color: rgb(15, 15, 15);
+.flex-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 4rem 0;
 }
+
+.flex-cards {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3.5rem;
+ }
+
+@media (max-width:801px) {
+  .flex-cards {
+    flex-direction: column;
+  }
+}
+

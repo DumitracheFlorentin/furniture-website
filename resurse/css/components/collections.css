@@ -1,0 +1,12 @@
+.collections .collections__cards .collections__card {
+ text-align: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ align-items: center;
+}
+
+.collections .collections__cards .collections__card .description {
+ margin: 1rem auto;
+ width: 70%;
+}
