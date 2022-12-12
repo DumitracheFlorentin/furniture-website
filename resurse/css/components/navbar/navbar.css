@@ -79,3 +79,9 @@
       border-radius: 25px; }
       .hamburger .line:not(:last-child) {
         margin-bottom: 0.3rem; } }
+
+#size {
+  transition: all 0.4s ease-in-out; }
+
+#size:hover {
+  transform: scale(1.05); }
