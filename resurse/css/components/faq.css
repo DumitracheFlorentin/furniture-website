@@ -1,0 +1,38 @@
+.faq__title {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+}
+
+.faq__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.faq__container__question {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+details summary {
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+details p {
+  font-size: 1rem;
+  text-align: center;
+  width: 80%;
+  margin: 1rem auto;
+}
