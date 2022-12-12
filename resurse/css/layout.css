@@ -12,6 +12,9 @@
 @import './components/gallery.css';
 @import './components/print.css';
 
+/* fonts */
+@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+
 /* reset margin and padding for all elements from project */
 * { 
   margin: 0;
@@ -19,6 +22,8 @@
 }
 
 body {
+  font-family: 'Quicksand', sans-serif;
+  
   /* define variables */
   --background:#1b1b1b; /* dark black */
   --background-gray:rgba(255, 255, 255, 0.4); /* dark black */
