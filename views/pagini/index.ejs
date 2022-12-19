@@ -190,6 +190,7 @@
              %>
               <figure class="image-<%- img.position %>">
                 <picture>
+                  <source srcset="<%- img.path_name_phone %>" media="(max-width:500px)" />
                   <source srcset="<%- img.path_name_medium %>" media="(max-width:1000px)" />
                   <img src="<%- img.path_name %>" alt="imagine">
                 </picture>
