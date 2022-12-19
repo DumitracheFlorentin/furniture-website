@@ -157,21 +157,7 @@
         </div>  
         <div class="fourth-zone">
           <section id="galerie-statica">
-            <h2>Gallery</h2>
-            <div id="grid-galerie">
-                <figure>
-                  <img src="./resurse/img/chair.jpg" alt="chair" height="200" width="250">
-                  <figcaption>Chair</figcaption>
-                </figure>
-                <figure>
-                  <img src="./resurse/img/bed.jpg" alt="chair" height="200" width="250">
-                  <figcaption>Bed</figcaption>
-                </figure>
-                <figure>
-                  <img src="./resurse/img/nightstand.jpg" alt="chair" height="200" width="250">
-                  <figcaption>Bed</figcaption>
-                </figure>
-            </div>
+            <h2>Empty</h2>
           </section>
         </div>
       </section>
@@ -194,6 +180,23 @@
             <q class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptate laudantium eos odit possimus excepturi saepe quis dolorem nisi? Ea nam deleniti reiciendis, obcaecati voluptatem vel voluptatibus vitae maxime dolor?</q>
             <a href="#">See More</a>
           </section>
+        </div>
+      </section>
+
+      <section id="galerie-statica" class="container">
+        <h2>Galerie</h2>
+        <div id="grid-galerie">
+          <% for (let img of locals.images) {
+             %>
+              <figure class="image-<%- img.position %>">
+                <picture>
+                  <source srcset="<%- img.path_name_medium %>" media="(max-width:1000px)" />
+                  <img src="<%- img.path_name %>" alt="imagine">
+                </picture>
+                <figcaption class="counter"><%- img.description %></figcaption>
+              </figure>
+            <%
+          } %>
         </div>
       </section>
 

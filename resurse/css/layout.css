@@ -11,6 +11,8 @@
 @import './components/faq.css';
 @import './components/gallery.css';
 @import './components/print.css';
+@import './components/galerie-statica.css';
+@import './components/galerie-statica-500.css';
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
@@ -22,6 +24,7 @@
 }
 
 body {
+  counter-reset: item-counter;
   font-family: 'Quicksand', sans-serif;
   
   /* define variables */
@@ -86,3 +89,10 @@ img {
   }
 }
 
+.counter {
+  counter-increment: item-counter;
+}
+
+.counter:before {
+  content: counter(item-counter, upper-roman) ". ";
+}

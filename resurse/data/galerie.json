@@ -1,0 +1,150 @@
+
+{
+  "path": "resurse/img/gallery",
+  "images": [
+    {
+      "path_name":"bed.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Bed",
+      "description":"A really beautiful bed",
+      "season":"winter",
+      "position": "1"
+    },
+    {
+      "path_name":"black_bed.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Black Bed",
+      "description":"A really beautiful bed and black",
+      "season":"winter",
+      "position": "2"
+    },
+    {
+      "path_name":"black_sofa.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Black Sofa",
+      "description":"A really beautiful sofa and black",
+      "season":"winter",
+      "position": "3"
+    },
+    {
+      "path_name":"brown_sofa.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Brown Sofa",
+      "description":"A really beautiful sofa and brown",
+      "season":"winter",
+      "position": "4"
+    },
+    {
+      "path_name":"cozy_bed.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Cozy Bed",
+      "description":"A really beautiful bed and cozy",
+      "season":"summer",
+      "position": "N/A"
+    },
+    {
+      "path_name":"black_bed.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Black Bed",
+      "description":"A really beautiful bed and black",
+      "season":"winter",
+      "position": "5"
+    },
+    {
+      "path_name":"glass.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Glass",
+      "description":"A really beautiful glass",
+      "season":"winter",
+      "position": "6"
+    },
+    {
+      "path_name":"gray_chair.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Gray Chair",
+      "description":"A really beautiful chair and gray",
+      "season":"winter",
+      "position": "7"
+    },
+    {
+      "path_name":"little_glass.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Little Glass",
+      "description":"A really beautiful glass, but little",
+      "season":"winter",
+      "position": "8"
+    },
+    {
+      "path_name":"minimalist_bed.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Minimalist Bed",
+      "description":"A really beautiful bed and minimalist",
+      "season":"winter",
+      "position": "9"
+    },
+    {
+      "path_name":"minimalist_sofa.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Minimalist Sofa",
+      "description":"A really beautiful sofa and minimalist",
+      "season":"winter",
+      "position": "10"
+    },
+    {
+      "path_name":"modern_table.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Modern Table",
+      "description":"A really beautiful table and modern",
+      "season":"winter",
+      "position": "11"
+    },
+    {
+      "path_name":"table.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"Table",
+      "description":"A really beautiful table",
+      "season":"winter",
+      "position": "12"
+    },
+    {
+      "path_name":"white_chair.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"White Chair",
+      "description":"A really beautiful chair and white",
+      "season":"winter",
+      "position": "13"
+    },
+    {
+      "path_name":"white_chair.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"White Chair",
+      "description":"A really beautiful chair and white",
+      "season":"winter",
+      "position": "14"
+    },
+    {
+      "path_name":"white_chair.png",
+      "path_name_medium": "",
+      "path_name_phone": "",
+      "title":"White Chair",
+      "description":"A really beautiful chair and white",
+      "season":"winter",
+      "position": "15"
+    }
+  ]
+}
