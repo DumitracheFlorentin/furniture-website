@@ -1,5 +1,5 @@
 
-/* import files */
+/* files */
 @import './components/landing.css';
 @import './components/cards.css';
 @import './components/grids.css';
@@ -11,6 +11,9 @@
 @import './components/collections.css';
 @import './components/faq.css';
 @import './components/gallery.css';
+
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 /* reset margin and padding for all elements from project */
 * { 
@@ -30,6 +33,9 @@ body {
   /* style */
   background-color: var(--background);
   color:var(--text-gray);
+
+  /* font */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* general settings */
