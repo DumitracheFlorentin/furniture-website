@@ -1,81 +1,18 @@
-.nav {
+#header {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  padding: 1rem 0; }
-  .nav .logo {
+  justify-content: space-between; }
+  #header .logo {
     display: flex;
-    align-items: center;
-    justify-content: center; }
-    .nav .logo .icon {
-      width: 1.25rem;
-      height: 1.25rem;
-      margin-right: 0.5rem;
-      fill: white; }
-    .nav .logo .title {
-      font-weight: 400;
-      text-transform: uppercase;
-      letter-spacing: 7px;
-      font-size: 1.5rem; }
-  .nav .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center; }
-    .nav .menu .dropdown {
-      margin-right: 0.75rem;
-      position: relative;
-      display: inline-block; }
-      .nav .menu .dropdown .button {
-        color: white;
-        padding: 16px;
-        font-size: 16px;
-        border: none; }
-      .nav .menu .dropdown .content {
-        display: none;
-        position: absolute;
-        background-color: #f1f1f1;
-        min-width: 160px;
-        box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-        z-index: 1; }
-        .nav .menu .dropdown .content a {
-          color: black;
-          padding: 12px 16px;
-          text-decoration: none;
-          display: block; }
-          .nav .menu .dropdown .content a:hover {
-            background-color: #ddd; }
-      .nav .menu .dropdown:hover .content {
-        display: block; }
-  .nav .hamburger {
-    display: none; }
-
-@media (max-width: 801px) {
-  .logo .title {
-    margin-top: 0.25rem;
-    font-size: 1rem !important; }
-  .logo .icon {
-    width: 0.25rem;
-    height: 0.25rem;
-    margin-right: 1rem; } }
-
-@media (max-width: 600px) {
-  .logo .icon {
-    width: 0.5rem;
-    height: 0.5rem; }
-  .logo .title {
-    display: none; }
-    .logo .title a {
-      font-size: 1.25rem !important; }
-  .menu {
-    display: none !important; }
-  .hamburger {
-    display: block !important;
+    justify-content: center;
     cursor: pointer; }
-    .hamburger .line {
-      height: 0.2rem;
-      width: 2rem;
-      background-color: white;
-      border-radius: 25px; }
-      .hamburger .line:not(:last-child) {
-        margin-bottom: 0.3rem; } }
+    #header .logo i {
+      margin: 0.05rem 0.75rem 0 0;
+      color: var(--text-gray);
+      font-size: 1.25rem; }
+    #header .logo h1 {
+      font-size: 1.25rem; }
+  #header nav #hamburger {
+    display: none; }
+  #header nav .menu {
+    display: flex; }
