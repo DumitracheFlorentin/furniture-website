@@ -68,6 +68,27 @@ table tfoot {
   font-size: 1.4rem;
 }
 
+#customers tr:hover {
+  box-shadow: 10px 10px 10px var(--purple) inset;
+  transition: box-shadow 0.5s ease-in-out;
+}
+
+#customers caption {
+  border-top: 0.5rem solid white;
+}
+
+#customers thead {
+  border-bottom: 0.5rem solid white;
+}
+
+#customers tbody tr:nth-child(odd) {
+  border-bottom: 0.25rem solid green;
+}
+
+#customers tbody tr:nth-child(even) {
+  border-bottom: 0.25rem solid red;
+}
+
 @media (max-width:801px) {
   .grids .third-zone, .grids .fourth-zone {
     font-size: 1.75rem;

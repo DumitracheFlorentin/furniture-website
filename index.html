@@ -3,13 +3,11 @@
   <head>
     <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
     <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
-    <title>Rompo | Homepage</title>
-    
-    <meta charset="UTF-8">
-    <meta name="author" content="Dumitrache Florentin-Cristian">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+    <title>Rompo | Homepage</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
     <link rel="stylesheet" href="/resurse/css/layout.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/resurse/ico/apple-touch-icon.png">
@@ -21,8 +19,9 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header id="header" class="header">
+    <header id="header" class="header container">
       <div class="logo">
+        <i class="fa-solid fa-house"></i> 
         <h1>Rompo <span>Furniture</span></h1>
       </div>
       <nav class="nav">
@@ -95,9 +94,9 @@
 
     <div class="landing">
       <picture>
-        <source srcset="./resurse/img/landing_mobile.jpg" media="(max-width:700px)"/>
-        <source srcset="./resurse/img/landing_medium.jpg" media="(max-width:1200px)"/>
-        <img src="./resurse/img/landing_large.jpg" alt="Furniture">
+        <source srcset="./resurse/imagini/landing_mobile.jpg" media="(max-width:700px)"/>
+        <source srcset="./resurse/imagini/landing_medium.jpg" media="(max-width:1200px)"/>
+        <img src="./resurse/imagini/landing_large.jpg" alt="Furniture">
       </picture>
     </div>
 
@@ -137,6 +136,7 @@
                 <th>Company</th>
                 <th colspan="2">Name</th>
                 <th>Country</th>
+                <th>Salary</th>
               </tr>
             </thead>
             <tbody>
@@ -145,54 +145,63 @@
                 <td>Maria</td>
                 <td>Anders</td>
                 <td>Germany</td>
+                <td>1000$</td>
               </tr>
               <tr>
                 <td>Berglunds snabbköp</td>
                 <td>Christina</td>
                 <td>Berglund</td>
                 <td>Sweden</td>
+                <td>2000$</td>
               </tr>
               <tr>
                 <td>Centro comercial Moctezuma</td>
                 <td>Francisco</td>
                 <td>Chang</td>
                 <td>Mexico</td>
+                <td>1000$</td>
               </tr>
               <tr>
                 <td>Ernst Handel</td>
                 <td>Roland</td>
                 <td>Mendel</td>
                 <td>Austria</td>
+                <td>1000$</td>
               </tr>
               <tr>
                 <td>Island Trading</td>
                 <td>Helen</td>
                 <td>Bennett</td>
                 <td>UK</td>
+                <td>3000$</td>
               </tr>
               <tr>
                 <td>Königlich Essen</td>
                 <td>Philip</td>
                 <td>Cramer</td>
                 <td>Germany</td>
+                <td>4000$</td>
               </tr>
               <tr>
                 <td>Laughing Bacchus Winecellars</td>
                 <td>Yoshi</td>
                 <td>Tannamuri</td>
                 <td>Canada</td>
+                <td>1000$</td>
               </tr>
               <tr>
                 <td>Magazzini Alimentari Riuniti</td>
                 <td>Giovanni</td>
                 <td>Rovelli</td>
                 <td>Italy</td>
+                <td>1000$</td>
               </tr>
               <tr>
                 <td>North/South</td>
                 <td>Simon</td>
                 <td>Crowther</td>
                 <td>UK</td>
+                <td>7000$</td>
               </tr>
             </tbody>
             <tfoot></tfoot>
@@ -285,14 +294,21 @@
       </div>
     </main>
 
-    <footer class="footer flex-section container">
-      <a class="footer__back-to-top" href="#header">Back To Top</a>
+    <div class="back-to-top-container">
+      <a class="back-to-top" href="#header" title="Click pentru a merge sus">
+        <div class="first-block"></div>
+        <div class="triangle"></div>
+        <div class="second-block"></div>
+      </a>
+    </div>
+    
 
-      <a class="footer__back-to-top" href="https://www.youtube.com/embed/l47G9607PrM" target="_blank">External Link</a>
+    <footer class="footer flex-section container">
+      <a class="footer__back-to-top" href="https://www.youtube.com/embed/l47G9607PrM" target="_blank">External Link <i class="fab fa-facebook"></i></a>
 
       <address class="footer__address">
         <span class="footer__address__email">
-          Email: <a href="mailto:webmaster@dumitracheflorentincristian@gmail.com">Dumitrache Florentin-Cristian</a> <br>
+          Email: <a href="mailto:webmaster@dumitracheflorentincristian@gmail.com">Dumitrache Florentin-Cristian</a> <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ></i><br>
         </span>
         <span class="footer__address__phone">
           Phone: <a href="tel:0766416074">+40766 416 074</a> <br>

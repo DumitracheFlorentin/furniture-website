@@ -1,19 +1,18 @@
 
-/* import files */
+/* files */
 @import './components/landing.css';
-@import './components/cards.css';
 @import './components/grids.css';
 @import './components/info.css';
 @import './components/footer.css';
 @import './components/back-to-top.css';
 @import './components/navbar/navbar.css';
+@import './components/about.css';
 @import './components/collections.css';
 @import './components/faq.css';
 @import './components/gallery.css';
-@import './components/print.css';
 
 /* fonts */
-@import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&display=swap');
 
 /* reset margin and padding for all elements from project */
 * { 
@@ -22,8 +21,6 @@
 }
 
 body {
-  font-family: 'Quicksand', sans-serif;
-  
   /* define variables */
   --background:#1b1b1b; /* dark black */
   --background-gray:rgba(255, 255, 255, 0.4); /* dark black */
@@ -35,6 +32,9 @@ body {
   /* style */
   background-color: var(--background);
   color:var(--text-gray);
+
+  /* font */
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* general settings */

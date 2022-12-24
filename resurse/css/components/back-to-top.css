@@ -1,3 +1,8 @@
+.back-to-top-container {
+  position: absolute;
+  left: 1rem;
+}
+
 .back-to-top {
   display: flex;
   flex-direction: row;
