@@ -81,6 +81,11 @@ img {
   margin-top: 3.5rem;
  }
 
+i {
+  color: white;
+  margin-left: 0.25rem;
+}
+
 @media (max-width:801px) {
   .flex-cards {
     flex-direction: column;
