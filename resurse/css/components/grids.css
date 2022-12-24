@@ -34,26 +34,10 @@
   border-spacing: 0 1rem;
 }
 
-table thead {
-  border-bottom: 1rem solid white;
-}
-
-table tfoot {
-  border-top: 1rem solid white;
-}
-
 #customers td, #customers th {
   border: 1px solid #ddd;
   padding: 0.25rem;
   font-size: 1.25rem;
-}
-
-#customers tbody tr:nth-child(even){
-  border: 0.25rem solid green;
-}
-
-#customers tbody tr:nth-child(odd){
-  border: 0.25rem solid red;
 }
 
 #customers tr:hover {
@@ -66,6 +50,22 @@ table tfoot {
   background-color: var(--purple);
   color: white;
   font-size: 1.4rem;
+}
+
+#customers caption {
+  border-top: 0.5rem solid white;
+}
+
+#customers thead {
+  border-bottom: 0.5rem solid white;
+}
+
+#customers tbody tr:nth-child(odd) {
+  border-bottom: 0.25rem solid green;
+}
+
+#customers tbody tr:nth-child(even) {
+  border-bottom: 0.25rem solid red;
 }
 
 @media (max-width:801px) {

@@ -95,3 +95,8 @@ img {
 .counter:before {
   content: counter(item-counter, upper-roman) ". ";
 }
+
+i {
+ margin-left: 0.5rem; 
+ color: var(--text-gray);
+}
