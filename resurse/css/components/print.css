@@ -7,7 +7,7 @@ body {
 }
 
 @media print {
-  .landing, .info, #table, .back-to-top, #header {
+  .landing, .info, #table, .back-to-top {
     display: none;
   }
 
