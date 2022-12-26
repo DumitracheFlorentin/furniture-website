@@ -84,9 +84,6 @@
                 left: 0;
                 animation-name: menu-animation;
                 animation-duration: .5s;
-                animation-timing-function: linear;
-                animation-fill-mode: forwards;
-                animation-iteration-count: 1;
                 transform-origin: 50% 0;
               }
               &::after {
@@ -99,9 +96,6 @@
                 right: 0;
                 animation-name: menu-animation;
                 animation-duration: .5s;
-                animation-timing-function: linear;
-                animation-fill-mode: forwards;
-                animation-iteration-count: 1;
                 transform-origin: 50% 0;
               }
             }
