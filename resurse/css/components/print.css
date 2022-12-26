@@ -2,12 +2,33 @@ body {
   -webkit-print-color-adjust: exact !important;
 }
 
-#watermark, #absolut, .printTitle{
+#watermark, #absolut, .printTitle, #print-header{
   display:none;
 }
 
 @media print {
-  .landing, .info, #table, .back-to-top {
+  .landing, .info, #table, .back-to-top, #galerie-statica {
+    display: none;
+  }
+
+  #print-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #print-header .print-nav .logo .title {
+    display: block;
+    text-align: center;
+    font-size: 2rem !important;
+  }
+
+  #print-header .print-nav ul li {
+    list-style: circle;
+  }
+
+  #print-header .print-nav ul .dropdown .content {
     display: none;
   }
 
@@ -24,7 +45,7 @@ body {
     width: 70%;
     display: block;
     page-break-after: always;
-		margin-top: 80vh;
+		margin-top: 70vh;
 		text-align:center;
     margin-left: 2.5cm;
     border: inset 4px #000;

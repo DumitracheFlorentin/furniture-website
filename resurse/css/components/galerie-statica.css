@@ -38,6 +38,18 @@
   text-align:center;
 }
 
+#grid-galerie img {
+  overflow: hidden !important;
+}
+
+#grid-galerie img:hover {
+  transform: scaleY(1.4);
+  transform-origin: top;
+  border-radius: 15px;
+  opacity: 0.5;
+  transition-duration: 0.125s;
+}
+
 @media screen and (max-width:500px){
   #grid-galerie {
     display:block;
