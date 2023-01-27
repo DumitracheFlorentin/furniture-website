@@ -1,6 +1,6 @@
 # Furniture website
 
-`
+```
 :root {
   --primary: #BB86FC;
   --primary-variant: #3700B3;
@@ -10,8 +10,7 @@
   --on-primary: #000000;
   --on-background: #ffffff;
 }
-
-`
+```
 
 Am implementat paleta de culori de mai sus, deoarece ne ofera un stil minimalist, dark.
 
