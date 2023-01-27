@@ -1,0 +1,12 @@
+.landing {
+  height: 100vh;
+  min-height: 849px;
+  position: relative;
+}
+
+.landing img {
+  width: 100%;
+  height: 100vh;
+  min-height: 849px;
+  opacity: 0.5;
+}

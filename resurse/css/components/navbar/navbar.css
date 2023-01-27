@@ -1,0 +1,18 @@
+#header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; }
+  #header .logo {
+    display: flex;
+    justify-content: center;
+    cursor: pointer; }
+    #header .logo i {
+      margin: 0.05rem 0.75rem 0 0;
+      color: var(--text-gray);
+      font-size: 1.25rem; }
+    #header .logo h1 {
+      font-size: 1.25rem; }
+  #header nav #hamburger {
+    display: none; }
+  #header nav .menu {
+    display: flex; }
