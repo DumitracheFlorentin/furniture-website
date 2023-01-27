@@ -1,17 +1,19 @@
 <!DOCTYPE html>
-  <html lang="en">
+  <html lang="ro">
   <head>
     <meta charset="UTF-8">
-    <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
     <meta name="author" content="Dumitrache Florentin-Cristian">
-    <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
+    <meta name="keywords" content="companie de mobilier, varietate de opțiuni, mobilier, canapele, mese de sufragerie, paturi, mobila pentru birou, materiale de calitate, design modern, elegant, oferta de mobilier">
+    <meta name="description" content="Rompo este o companie de mobilier cu o varietate de opțiuni pentru fiecare colț al casei dumneavoastră.">
+    
+    <link href="resurse/css/layout.css" rel="stylesheet" type="text/css">
+
+    <title>Rompo | Acasa</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rompo | Homepage</title>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link>
     
-    <link rel="stylesheet" href="/resurse/css/layout.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/resurse/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resurse/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/resurse/ico/favicon-16x16.png">
@@ -21,296 +23,216 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header id="header" class="header container">
+    <header id="header" class="header">
       <div class="logo">
-        <i class="fa-solid fa-house"></i> 
         <h1>Rompo <span>Furniture</span></h1>
       </div>
       <nav class="nav">
-        <div id="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <ul class="menu">
-            <li>
-              <div>
-                <p>Home</p>
-              </div>
-              <ul>
+        <label id="hamburger" for="ch-menu">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </label>
+        <input id="ch-menu" type="checkbox">
+    
+        <ul class="meniu">
+          <li>
+            <div>
+              <p>Acasa</p>
+            </div>
+            <ul>
+              <li>
+                <a href="#locations">Locatii</a>
+              </li>
+              <li>
+                <a href="#awards">Premii</a>
+              </li>
+              <li>
+                <a href="#shipping">Politica de curierat</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <p>Despre Noi</p>
+            </div>
+            <ul>                        
+              <li>
+                <a href="despre.html#presentation">Prezentare</a>
+              </li>
+              <li>
+                <a href="despre.html#history">Istoric</a>
+              </li>
+              <li>
+                <a href="despre.html#motivation">Motivatie</a>
+              </li>
+              <li>
+                <a href="despre.html#gallery">Galerie</a>
+              </li>
+            </ul>
+          </li>
+          <li>
+            <div>
+              <p>Produse</p>
+            </div>
+            <ul>
                 <li>
-                  <a href="#locations">Locations</a>
+                  <a href="#">Toate</a>
                 </li>
                 <li>
-                  <a href="#awards">Awards</a>
+                  <a href="#">Paturi</a>
                 </li>
                 <li>
-                  <a href="#shipping">Shipping Policy</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div>
-                <p>About Us</p>
-              </div>
-              <ul>                        
-                <li>
-                  <a href="despre.html#presentation">Presentation</a>
+                  <a href="#">Scaune</a>
                 </li>
                 <li>
-                  <a href="despre.html#history">History</a>
+                  <a href="#">Noptiere</a>
                 </li>
-                <li>
-                  <a href="despre.html#motivation">Motivation</a>
-                </li>
-                <li>
-                  <a href="despre.html#gallery">Gallery</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div>
-                <p>Products</p>
-              </div>
-              <ul>
-                  <li>
-                    <a href="#">All</a>
-                  </li>
-                  <li>
-                    <a href="#">Beds</a>
-                  </li>
-                  <li>
-                    <a href="#">Chairs</a>
-                  </li>
-                  <li>
-                    <a href="#">Nightstands</a>
-                  </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
 
     <div class="landing">
-      <picture>
-        <source srcset="./resurse/imagini/landing_mobile.jpg" media="(max-width:700px)"/>
-        <source srcset="./resurse/imagini/landing_medium.jpg" media="(max-width:1200px)"/>
-        <img src="./resurse/imagini/landing_large.jpg" alt="Furniture">
-      </picture>
+      <figure>
+        <picture>
+          <source srcset="resurse/imagini/landing_mobile.jpg" media="(max-width: 600px)">
+          <source srcset="resurse/imagini/landing_medium.jpg" media="(max-width: 1024px)">
+          <img src="resurse/imagini/landing_large.jpg" alt="Descrierea imaginii">
+        </picture>
+        <figcaption>Descrierea imaginii</figcaption>
+      </figure>
     </div>
 
     <main id="main">
-      <section class="about flex-section">
+      <section class="about">
         <h2 class="about__title">About Us</h2>
-        <div class="about__cards flex-cards">
-          <article class="about__card">
-            <h3>Family health</h3>
-            <p class="description">Rompo Furniture is <b>non-toxic</b>, tested and certified due to the quality it proves, accredited by <a href="https://www.ul.com/resources/ul-greenguard-certification-program"><abbr title="Greenguard Gold">GG</abbr></a>.</p>
-            <a href="#">Details</a>
-          </article>
-          <article class="about__card">
-            <h3>Safety above all</h3>
-            <p class="description"> <b>The drawers</b> joined in the dovetail system have <b>an anchoring and anti-detachment system</b>.</p>
-            <a href="#">Details</a>
-          </article>
-          <article class="about__card">
-            <h3><b>Durable</b> furniture</h3>
-            <p class="description">Made 100% of <b>solid wood</b> of beech and oak, made to last over generations.</p>
-            <a href="#">Details</a>
-          </article>
-          <article class="about__card">
-            <h3>Winners for 10 years</h3>
-            <blockquote cite="gazetadreptatea.ro" class="description">The newspaper "Dreptatea" offers the award for the best business in the field of furniture in the last 10 years.</blockquote>
-            <a href="#">Details</a>
-          </article>
-        </div>
+        <article class="about__card">
+          <h3>Family health</h3>
+          <p>Rompo Furniture is <b>non-toxic</b>, tested and certified due to the quality it proves, accredited by <a href="https://www.ul.com/resources/ul-greenguard-certification-program"><abbr title="Greenguard Gold">GG</abbr></a>.</p>
+          <a href="#">Details</a>
+        </article>
+        <article class="about__card">
+          <h3>Safety above all</h3>
+          <p> <b>The drawers</b> joined in the dovetail system have <b>an anchoring and anti-detachment system</b>.</p>
+          <a href="#">Details</a>
+        </article>
+        <article class="about__card">
+          <h3><b>Durable</b> furniture</h3>
+          <p>Made 100% of <b>solid wood</b> of beech and oak, made to last over generations.</p>
+          <a href="#">Details</a>
+        </article>
+        <article class="about__card">
+          <h3>Winners for 10 years</h3>
+          <p>The newspaper "Dreptatea" offers the award for <strong> the best business </strong> in the field of furniture in the last 10 years.</p>
+          <a href="#">Details</a>
+        </article>
       </section>
 
-      <section class="grids grid-container" id="table">
-        <div class="second-zone table" style="overflow-x:auto;overflow-y:hidden;">
-          <table id="customers">
-            <caption>Customers</caption>
-            <thead>
-              <tr>
-                <th>Company</th>
-                <th colspan="2">Name</th>
-                <th>Country</th>
-                <th>Salary</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria</td>
-                <td>Anders</td>
-                <td>Germany</td>
-                <td>1000$</td>
-              </tr>
-              <tr>
-                <td>Berglunds snabbköp</td>
-                <td>Christina</td>
-                <td>Berglund</td>
-                <td>Sweden</td>
-                <td>2000$</td>
-              </tr>
-              <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco</td>
-                <td>Chang</td>
-                <td>Mexico</td>
-                <td>1000$</td>
-              </tr>
-              <tr>
-                <td>Ernst Handel</td>
-                <td>Roland</td>
-                <td>Mendel</td>
-                <td>Austria</td>
-                <td>1000$</td>
-              </tr>
-              <tr>
-                <td>Island Trading</td>
-                <td>Helen</td>
-                <td>Bennett</td>
-                <td>UK</td>
-                <td>3000$</td>
-              </tr>
-              <tr>
-                <td>Königlich Essen</td>
-                <td>Philip</td>
-                <td>Cramer</td>
-                <td>Germany</td>
-                <td>4000$</td>
-              </tr>
-              <tr>
-                <td>Laughing Bacchus Winecellars</td>
-                <td>Yoshi</td>
-                <td>Tannamuri</td>
-                <td>Canada</td>
-                <td>1000$</td>
-              </tr>
-              <tr>
-                <td>Magazzini Alimentari Riuniti</td>
-                <td>Giovanni</td>
-                <td>Rovelli</td>
-                <td>Italy</td>
-                <td>1000$</td>
-              </tr>
-              <tr>
-                <td>North/South</td>
-                <td>Simon</td>
-                <td>Crowther</td>
-                <td>UK</td>
-                <td>7000$</td>
-              </tr>
-            </tbody>
-            <tfoot></tfoot>
-          </table>
-        </div>
-        <div class="third-zone">
-          <section class="faq flex-section">
-            <h2 class="faq__title">FAQ</h2>
-    
-            <div class="faq__container">
-              <details class="faq__container__question">
-                <summary>Question #1</summary>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
-              </details>
-              <details class="faq__container__question">
-                <summary>Question #2</summary>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
-              </details>
-              <details class="faq__container__question">
-                <summary>Question #3</summary>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
-              </details>
-              <details class="faq__container__question">
-                <summary>Question #4</summary>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
-              </details>
-            </div>
-          </section>
-        </div>  
-        <div class="fourth-zone">
-          <section id="galerie-statica">
-            <h2>Gallery</h2>
-            <div id="grid-galerie">
-                <figure>
-                  <img src="./resurse/imagini/chair.jpg" alt="chair" height="200" width="250">
-                  <figcaption>Chair</figcaption>
-                </figure>
-                <figure>
-                  <img src="./resurse/imagini/bed.jpg" alt="chair" height="200" width="250">
-                  <figcaption>Bed</figcaption>
-                </figure>
-                <figure>
-                  <img src="./resurse/imagini/nightstand.jpg" alt="chair" height="200" width="250">
-                  <figcaption>Bed</figcaption>
-                </figure>
-            </div>
-          </section>
-        </div>
-      </section>
-
-      <section class="collections flex-section">
+      <section class="collections">
         <h2 class="collections__title">Collections</h2>
-        <div class="collections__cards flex-cards">
-          <section class="collections__card">
-            <h3>Bucharest Collection</h3>
-            <q class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi fugiat vitae aperiam mollitia, ea impedit dignissimos voluptatibus enim deleniti, vel facilis velit magni voluptatem placeat odit ab repellendus expedita perferendis!</q>
-            <a href="#">See More</a>
-          </section>
-          <section class="collections__card">
-            <h3>Paris Collection</h3>
-            <q class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto voluptas soluta laborum porro maxime sunt aliquam accusantium, quia, hic exercitationem dignissimos? Hic non officiis assumenda pariatur nobis similique perspiciatis deleniti?</q>
-            <a href="#">See More</a>
-          </section>
-          <section class="collections__card">
-            <h3>Barcelona Collection</h3>
-            <q class="description">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque voluptate laudantium eos odit possimus excepturi saepe quis dolorem nisi? Ea nam deleniti reiciendis, obcaecati voluptatem vel voluptatibus vitae maxime dolor?</q>
-            <a href="#">See More</a>
-          </section>
+        <section class="collections__card">
+          <h3>Bucharest Collection</h3>
+          <blockquote>
+            <p>"Designul este un proces de a găsi soluții elegante la problemele practice."</p>
+            <footer>- Charles Eames</footer>
+          </blockquote>
+          <a href="#">See More</a>
+        </section>
+        <section class="collections__card">
+          <h3>Paris Collection</h3>
+          <blockquote>
+            <p>"Designul este un proces de a găsi soluții elegante la problemele practice."</p>
+            <footer>- Charles Eames</footer>
+          </blockquote>
+          <a href="#">See More</a>
+        </section>
+        <section class="collections__card">
+          <h3>Barcelona Collection</h3>
+          <blockquote>
+            <p>"Designul este un proces de a găsi soluții elegante la problemele practice."</p>
+            <footer>- Charles Eames</footer>
+          </blockquote>
+          <a href="#">See More</a>
+        </section>
+      </section>
+
+      <section class="faq">
+        <h2 class="faq__title">FAQ</h2>
+
+        <div class="faq__container">
+          <details class="faq__container__question">
+            <summary>Question #1</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+          <details class="faq__container__question">
+            <summary>Question #2</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+          <details class="faq__container__question">
+            <summary>Question #3</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
+          <details class="faq__container__question">
+            <summary>Question #4</summary>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Similique ab sapiente natus molestias exercitationem quisquam alias, ad odio, excepturi neque, voluptatum perspiciatis repellendus? Excepturi officiis ducimus quaerat quae et quis.</p>
+          </details>
         </div>
       </section>
 
-      <section class="info container">
-        <iframe name="iframe" width="560" height="315" src="https://www.youtube.com/embed/1mngMKEkxn0"></iframe>
-        <div class="links">
-          <div class="iframe-section">
-            <div class="trapezoid"></div> 
-            <a target="iframe" href="https://www.youtube.com/embed/JwZZw_bEkjo">Video 1</a>
-          </div>
-          <div class="iframe-section">
-            <div class="trapezoid"></div> 
-            <a target="iframe" href="https://www.youtube.com/embed/l47G9607PrM">Video 2</a>  
-          </div>
+      <section id="galerie-statica">
+        <h2>Gallery</h2>
+        <div id="grid-galerie">
+            <figure>
+              <img src="./resurse/imagini/chair.jpg" alt="chair" height="200" width="250">
+              <figcaption>Chair</figcaption>
+            </figure>
+            <figure>
+              <img src="./resurse/imagini/bed.jpg" alt="chair" height="200" width="250">
+              <figcaption>Bed</figcaption>
+            </figure>
+            <figure>
+              <img src="./resurse/imagini/nightstand.jpg" alt="chair" height="200" width="250">
+              <figcaption>Bed</figcaption>
+            </figure>
         </div>
       </section>
-      
-      <div class="flex-section container">
-        <a href="/resurse/ico/favicon.png" download>
-          Download our contact
-        </a>
+
+      <div class="videos">
+        <a target="iframe" href="https://www.youtube.com/embed/JwZZw_bEkjo">Video 1</a>
+        <a target="iframe" href="https://www.youtube.com/embed/l47G9607PrM">Video 2</a>
+        <iframe name="iframe" width="560" height="315" src="https://www.youtube.com/embed/1mngMKEkxn0"></iframe>
       </div>
+      
+      <a href="/resurse/ico/favicon.png" download>
+        Download our contact
+      </a>
+
+      <math>
+        <mrow>
+          <mi>V</mi>
+          <mo>=</mo>
+          <mi>l</mi>
+          <mo>&#xD7;</mo>
+          <mi>w</mi>
+          <mo>&#xD7;</mo>
+          <mi>h</mi>
+        </mrow>
+      </math>
     </main>
 
-    <div class="back-to-top-container">
-      <a class="back-to-top" href="#header" title="Click pentru a merge sus">
-        <div class="first-block"></div>
-        <div class="triangle"></div>
-        <div class="second-block"></div>
-      </a>
-    </div>
-    
+    <footer class="footer">
+      <a class="footer__back-to-top" href="#">Back To Top</a>
 
-    <footer class="footer flex-section container">
-      <a class="footer__back-to-top" href="https://www.youtube.com/embed/l47G9607PrM" target="_blank">External Link <i class="fab fa-facebook"></i></a>
+      <a class="footer__back-to-top" href="https://www.youtube.com/embed/l47G9607PrM" target="_blank">External Link</a>
 
       <address class="footer__address">
         <span class="footer__address__email">
-          Email: <a href="mailto:webmaster@dumitracheflorentincristian@gmail.com">Dumitrache Florentin-Cristian</a> <i class="fa-solid fa-envelope fa-bounce" style=" --fa-bounce-start-scale-x: 1; --fa-bounce-start-scale-y: 1; --fa-bounce-jump-scale-x: 1; --fa-bounce-jump-scale-y: 1; --fa-bounce-land-scale-x: 1; --fa-bounce-land-scale-y: 1; --fa-bounce-rebound: 0;" ></i><br>
+          Email: <a href="mailto:webmaster@dumitracheflorentincristian@gmail.com">Dumitrache Florentin-Cristian</a> <br>
         </span>
         <span class="footer__address__phone">
           Phone: <a href="tel:0766416074">+40766 416 074</a> <br>
@@ -321,7 +243,7 @@
         <a href="https://api.whatsapp.com/send?phone=0766416074" class="footer__address__wapp">Send Message</a>
       </address>
 
-      <small class="copyright">Copyright &copy; <time datetime="2022-10-26 12:00">Dumitrache Florentin-Cristian</time>. All rights reserved.</small>
+      <small class="footer__copyright">Copyright &copy; <time datetime="2023-01-27 12:00">27 Ianuarie 2023</time> | Dumitrache Florentin-Cristian. Toate drepturile rezervate.</small>
     </footer>
   </body>
 </html>

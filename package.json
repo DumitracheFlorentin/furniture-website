@@ -1,8 +1,0 @@
-{
-  "scripts": {
-    "watch:scss": "node-sass -w resurse/css/components/navbar/navbar.scss resurse/css/components/navbar/navbar.css"
-  },
-  "dependencies": {
-    "node-sass": "^8.0.0"
-  }
-}
