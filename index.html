@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     
     <link rel="stylesheet" href="/resurse/css/layout.css">
+    <link rel="stylesheet" href="resurse/css/nav.css" type="text/css" />
+    <link rel="stylesheet" href="resurse/css/nav-750.css" type="text/css" media="screen and (max-width:750px)" />
+
     <link rel="apple-touch-icon" sizes="180x180" href="/resurse/ico/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/resurse/ico/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/resurse/ico/favicon-16x16.png">
@@ -19,78 +22,57 @@
     <meta name="theme-color" content="#ffffff">
   </head>
   <body>
-    <header id="header" class="header container">
-      <div class="logo">
-        <i class="fa-solid fa-house"></i> 
-        <h1>Rompo <span>Furniture</span></h1>
-      </div>
-      <nav class="nav">
-        <div id="hamburger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </div>
-        <ul class="menu">
-            <li>
-              <div>
-                <p>Home</p>
-              </div>
-              <ul>
-                <li>
-                  <a href="#locations">Locations</a>
-                </li>
-                <li>
-                  <a href="#awards">Awards</a>
-                </li>
-                <li>
-                  <a href="#shipping">Shipping Policy</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div>
-                <p>About Us</p>
-              </div>
-              <ul>                        
-                <li>
-                  <a href="despre.html#presentation">Presentation</a>
-                </li>
-                <li>
-                  <a href="despre.html#history">History</a>
-                </li>
-                <li>
-                  <a href="despre.html#motivation">Motivation</a>
-                </li>
-                <li>
-                  <a href="despre.html#gallery">Gallery</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <div>
-                <p>Products</p>
-              </div>
-              <ul>
-                  <li>
-                    <a href="#">All</a>
-                  </li>
-                  <li>
-                    <a href="#">Beds</a>
-                  </li>
-                  <li>
-                    <a href="#">Chairs</a>
-                  </li>
-                  <li>
-                    <a href="#">Nightstands</a>
-                  </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#">Contact</a>
-            </li>
+    <header>
+      <h1>Rompo <span>Furniture</span></h1>
+      <nav>
+        <label id="hamburger" for="ch-menu">
+          <img src="resurse/imagini/Hamburger_icon_alb.png" alt="menu">
+        </label>
+        <input id="ch-menu" type="checkbox">
+        <ul class="meniu">
+          <li>
+            <div>Acasa</div>
+            <ul>
+              <li><a href="#welcome">Bine ati venit</a></li>
+              <li><a href="#locations">Locatii</a></li>
+              <li><a href="#anunturi">Anunturi</a></li>
+              <li><a href="#produse">Produse</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Inregistrare</a>
+          </li>
+          <li>
+            <div>Despre Noi</div>
+            <ul>                        
+              <li><a href="despre.html#prezentare">Prezentare</a></li>
+              <li><a href="despre.html#istoric">Istoric</a></li>
+              <li><a href="despre.html#motivatie">Motivatie</a></li>
+              <li><a href="despre.html#galerie">Galerie</a></li>
+            </ul>
+          </li>
+          <li>
+            <div>Produse</div>
+            <ul>
+              <li><a href="http://www.google.com">Toate</a></li>
+              <li><a href="#">Paturi</a></li>
+              <li><a href="#">Noptiere</a></li>
+              <li><a href="#">Canapele</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">Contact</a>
+          </li>
         </ul>
       </nav>
-    </header>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+      <br/>
+  </header>
 
     <div class="landing">
       <picture>
