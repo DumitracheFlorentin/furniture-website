@@ -100,3 +100,38 @@ i {
  margin-left: 0.5rem; 
  color: var(--text-gray);
 }
+
+#imagine{
+	position:relative;
+	background-image:url("http://irinaciocan.ro/imagini/plante.jpg");
+	background-size:cover;
+	width:500px; 
+	height: 500px;
+	filter:grayscale(0%);
+	transition:filter 2s linear;
+}
+
+#imagine:after, #imagine:before{
+	content:" ";
+	position:absolute;
+	height:100%;
+	width:100%;
+	top:0;
+	left:0;
+	
+	transition:all 2s linear;
+}
+
+#imagine:after{
+	background-color: red;
+	mix-blend-mode:lighten;
+}
+
+#imagine:before{
+	background-color: blue;
+	mix-blend-mode:darken;
+}
+
+#imagine:hover{
+	filter: grayscale(100%);
+}
