@@ -102,7 +102,6 @@ i {
 }
 
 #imagine{
-	position:relative;
 	background-image:url("http://irinaciocan.ro/imagini/plante.jpg");
 	background-size:cover;
 	width:500px; 
