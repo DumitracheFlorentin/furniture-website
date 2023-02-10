@@ -135,3 +135,60 @@ i {
 #imagine:hover{
 	filter: grayscale(100%);
 }
+
+#container {
+  margin:5rem 0;
+  display: flex;
+}
+
+#text-reflectat{
+	transform: rotate(20deg) rotateY(180deg) skew(-20deg);
+	opacity:0.55;
+}
+
+#text{	
+  margin-right: 1rem;
+	position: relative;
+  transform: rotate(-20deg) skew(-20deg);
+}
+
+#text, #text-reflectat{
+	font-size:50px;
+	line-height:50px;
+	font-weight: bold;
+}
+
+#text, #text-reflectat {
+  color: black;
+  transition: all 0.3s ease-in-out;
+}
+
+#text:hover, #text-reflectat:hover {
+  color: blue;
+}
+
+#text:hover ~ #text-reflectat, #text-reflectat:hover ~ #text {
+  color: blue;
+}
+
+
+#walk-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+#walk-text {
+  color: black;
+  animation: move-horizontal 5s linear infinite;
+}
+
+@keyframes move-horizontal {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
