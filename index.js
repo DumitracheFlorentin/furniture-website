@@ -102,7 +102,24 @@ app.get("/products", (req, res) => {
       renderError(res, 404)
     }
 
-    return res.render("pagini/produse", { products: dbRes.rows })
+    client.query('select min(pret) as priceMin, max(pret) as priceMax, min(garantie) as garantieMin, max(garantie) as garantieMax from products', (err, rangesRes) => {
+      if(err) {
+        renderError(res, 404)
+      }
+
+      const priceRanges = {
+        min: rangesRes.rows[0].pricemin,
+        max: rangesRes.rows[0].pricemax,
+      }
+
+      const guaranteeRanges = {
+        min: rangesRes.rows[0].garantiemin,
+        max: rangesRes.rows[0].garantiemax,
+      }
+      
+
+      return res.render("pagini/produse", { products: dbRes.rows, priceRanges, guaranteeRanges })
+    })
   })
 })
 
