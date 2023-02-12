@@ -1,12 +1,21 @@
 const express = require("express")
 const fs = require("fs")
-const sharp = require('sharp');
+const sharp = require('sharp')
+const { Client } = require('pg')
 
 app = express()
 
 app.set("view engine","ejs")
 
 app.use("/resurse", express.static(__dirname + "/resurse"))
+
+var client = new Client({database:"laborator",
+    user:"florentin",
+    password:"florentin",
+    host:"localhost",
+    port:5432
+  })
+client.connect()
 
 var getErrors = null
 var getImages = null
@@ -85,6 +94,16 @@ function renderError (res, statusCode, title, label, img) {
 
 app.get(["/","/index","/home"], (req, res) => {
   res.render("pagini/index", { ip: req.ip, images: getImages })
+})
+
+app.get("/products", (req, res) => {
+  client.query("select * from products", (err, dbRes) => {
+    if(err) {
+      renderError(res, 404)
+    }
+
+    return res.render("pagini/produse", { products: dbRes.rows })
+  })
 })
 
 app.get("/*.ejs",function(req, res){
