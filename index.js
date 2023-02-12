@@ -118,7 +118,19 @@ app.get("/products", (req, res) => {
       }
       
 
-      return res.render("pagini/produse", { products: dbRes.rows, priceRanges, guaranteeRanges })
+      client.query('select distinct(tip_produs) from products', (err, typeRes) => {
+        if(err) {
+          renderError(res, 404)
+        }
+
+        const prodType = []
+
+        typeRes.rows.forEach((type, index) => {
+          prodType.push(typeRes.rows[index]['tip_produs'])
+        })
+  
+        return res.render("pagini/produse", { products: dbRes.rows, priceRanges, guaranteeRanges, prodType })
+      })
     })
   })
 })

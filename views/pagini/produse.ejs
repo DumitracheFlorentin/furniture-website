@@ -47,14 +47,12 @@
             </select>
         </label>
 
-        <label>Personalizabil:
+        <label>Tip Produs:
             <select id="inp-categorie">
                 <option id="sel-toate" selected value="toate">toate</option>
-                <% for (var prop in locals.guaranteeRanges) {
-                    if (Object.prototype.hasOwnProperty.call(locals.guaranteeRanges, prop)) { %>
-                      <option value="<%- locals.guaranteeRanges[prop] %>"> <%- locals.guaranteeRanges[prop] %> </option>
-               <%   }
-                  } %>
+                <% for (let opt of locals.prodType) { %>
+                    <option value="<%- opt %>"><%- opt %> </option>
+                <% } %>
             </select>
         </label>
 
