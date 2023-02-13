@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="description" content="Rompo is a furniture company that offers exclusive products at an unbeatable price">
+    <meta name="keywords" content="furniture, where to buy furniture, exclusive furniture, cheap furniture">
+    <title>Rompo | Products</title>
+
+    <%- include("../fragmente/head.ejs") %>
+  </head>
+    <body>
+        <%- include("../fragmente/header.ejs") %>
+
+        <main>
+          <section id="reviste">
+            <h2>Reviste</h2>
+
+            <div class="sort-container">
+              <label>Sortare:</label>
+              <input type="radio" name="sortare" value="cresc" checked>Crescator
+              <input type="radio" name="sortare" value="descresc">Descrescator
+              <button id="sorteaza">Sorteaza</button>
+            </div>
+            
+            <div class="filter-container">
+              <label>Tematici:</label>
+              <input type="checkbox" name="tematici" value="sport" checked>Sport
+              <input type="checkbox" name="tematici" value="tehnica">Tehnica
+              <input type="checkbox" name="tematici" value="stiinta">Stiinta
+              <input type="checkbox" name="tematici" value="turism">Turism
+              <button id="filtreaza">Filtreaza</button>
+            </div>
+
+            <div class="grid-reviste">
+                <% for( let revista of locals.reviste) { %>
+                  <article class="revista" id="idr-<%- revista.id %>">
+                    <h2><em><u><%- revista.titlu%></u></em> (<%- revista.numar_pagini%> pagini)</h2>
+                    <p>Aparitie: <span class="aparitie"><%- revista.aparitie%></span>, Pret: <span class="pret"><%- revista.pret%></span></p>
+                    <p>Tematici:</p>
+                    <ul>
+                      <%
+                        let tematici = revista.tematici.split('/');
+                        tematici.forEach(function(tematica) {
+                        %>
+                        <li><%- tematica.trim() %></li>
+                      <% }); %>
+                    </ul>
+                  </article>
+                <% }%>
+            </div>
+
+            <div class="pretMaximContainer">
+              <input type="range" id="pretMaxim">
+              <label class="labelPretMaxim" for="pretMaxim">Pret maxim:</label>
+  
+              <button id="seteazaPret">Seteaza</button>
+            </div>
+
+            <div class="formContainer">
+              <form onsubmit="event.preventDefault();">
+                <label for="tematica">Tematica:</label>
+                <input type="text" id="tematica" name="tematica">
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email">
+              
+                <input type="submit" value="Trimite" class="btn">
+              </form>
+            </div>
+        </section>
+      </main>
+
+    <%- include("../fragmente/footer") %>
+    </body>
+</html>
+
+<script>
+  document.getElementById("seteazaPret").addEventListener("click", function() {
+    const pretMaxim = document.getElementById("pretMaxim").value;
+    localStorage.setItem("pretMaxim", pretMaxim);
+  });
+</script>

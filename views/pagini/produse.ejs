@@ -35,18 +35,6 @@
             </select>
         </label>
 
-        <label> Garantie minima: <input type="range" id="inp-pret" value="0" min="0"  max="70"> <span id="infoRange">(0)</span></label>
-        <label>Select simplu:
-            <select id="inp-categorie">
-                <option id="sel-toate" selected value="toate">toate</option>
-                <% for (var prop in locals.guaranteeRanges) {
-                    if (Object.prototype.hasOwnProperty.call(locals.guaranteeRanges, prop)) { %>
-                      <option value="<%- locals.guaranteeRanges[prop] %>"> <%- locals.guaranteeRanges[prop] %> </option>
-               <%   }
-                  } %>
-            </select>
-        </label>
-
         <label>Tip Produs:
             <select id="inp-categorie">
                 <option id="sel-toate" selected value="toate">toate</option>

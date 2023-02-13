@@ -13,6 +13,7 @@
 @import './components/landing.css';
 @import './components/print.css';
 @import './components/products/products.css';
+@import './components/reviste.css';
 
 /* fonts */
 @import url('https://fonts.googleapis.com/css?family=Quicksand&display=swap');

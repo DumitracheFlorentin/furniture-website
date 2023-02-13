@@ -96,6 +96,16 @@ app.get(["/","/index","/home"], (req, res) => {
   res.render("pagini/index", { ip: req.ip, images: getImages })
 })
 
+app.get("/reviste", (req, res) => {
+  client.query("select * from reviste", (err, dbRes) => {
+    if(err) {
+      return err
+    }
+
+    return res.render("pagini/reviste", {reviste: dbRes.rows})
+  })
+}) 
+
 app.get("/products", (req, res) => {
   client.query("select * from products", (err, dbRes) => {
     if(err) {
